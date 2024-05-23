@@ -1,0 +1,166 @@
+/* thân */
+.body_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* background */
+.main_content {
+  background-color: white;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  position: relative;
+}
+
+.add_input,
+.list_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add_input input {
+  height: 50px;
+  width: 70%;
+}
+
+.add_input input::placeholder {
+  text-align: center;
+  height: 50px;
+  font-weight: bold;
+  color: rgb(221, 224, 226);
+  font-size: large;
+  font-style: italic;
+}
+
+.add_button {
+  border: 0px solid white;
+  width: 8%;
+  height: 55px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.icon_add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px !important ;
+  font-weight: bold;
+}
+
+.contents {
+  margin-top: 20px;
+}
+
+.list_content :hover {
+  background-color: #f0f9ff;
+}
+
+.list_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid gray;
+  height: 50px;
+  width: 79%;
+}
+
+.list_item input[type="checkbox"] {
+  zoom: 1.5;
+}
+
+.list_item input[type="text"] {
+  zoom: 1.1;
+}
+
+.list_item input[type="text"]:hover {
+  background-color: white;
+}
+
+.text_input {
+  text-decoration: line-through;
+  color: rgb(73,156,193);
+}
+
+.input_text input {
+  margin-left: 3px;
+  margin-right: 7px;
+}
+
+.list_icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list_icon button {
+  border: 0px solid white;
+  background-color: white;
+}
+
+.list_icon i {
+  color: gray;
+}
+
+.list_icon .fa-solid:hover {
+  cursor: pointer;
+  color: #2596be;
+}
+
+.contents input {
+  background-color: white;
+  border: 0px solid white;
+}
+
+.contents input:focus {
+  outline: none;
+}
+
+.bottom_setting {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+}
+
+.remove_button {
+  border-top: 1px solid gray;
+  border: 1px solid gray;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  height: 100%;
+  background-color: rgb(73,156,193);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.progress {
+  height: 100%;
+  background-color: #96e34a;
+}
+
+.task_done {
+  height: 30px;
+  width: 250px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.count_complete {
+  position: absolute;
+  left: 25%;
+  font-size: 15px;
+  color: gray;
+}
+
+.count_complete p span {
+  font-size: 20px;
+  color: gray;
+}
