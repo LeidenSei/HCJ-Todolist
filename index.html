@@ -10,26 +10,25 @@
 </head>
 
 <body style="background-color: rgb(73,156,193);">
-    <div class="body_content">
-        <div class="main_content" style="text-align: center;">
+    <div class="body-content ">
+        <div class="main-content" style="text-align: center;">
             <h2 style="color: rgb(86,91,98);">TODOLIST</h3>
-                <div class="add_input">
-                    <input type="text" id="add_work" placeholder="what needs to be done?">
-                    <button onclick="AddWork()" class="add_button" style="background-color: rgb(73,156,193);">
-                        <div class="icon_add" style="color: white;">+</div>
+                <div class="add-input">
+                    <input type="text" id="add_work" onkeydown="handleAppWork(event)" placeholder="what needs to be done?">
+                    <button onclick="AddWork()"  class="add-button" style="background-color: rgb(73,156,193);">
+                        <div class="icon-add" style="color: white;">+</div>
                     </button>
                 </div>
-                <div class="contents" id="contents">
-
+            <div id="overscroll_check" style="text-align: center;" >
+                <div class="contents" id="contents"></div>
+            </div>
+            <div class="actions">
+                <div class="" id="task_check"></div>
+                <div class="remove-checked" id="remove_checked">
                 </div>
-                <div class="bottom_setting">
-                    <div class="" id="task_done"></div>
-
-                    <div class="remove_checked" id="remove_checked">
-                        <span></span>
-                    </div>
-                </div>
+            </div>
         </div>
+
     </div>
 
     <script src="myscripts.js"></script>

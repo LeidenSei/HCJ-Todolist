@@ -1,32 +1,45 @@
-/* thân */
-.body_content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  height: 100%; 
+  max-height: 100%; 
 }
-/* background */
-.main_content {
-  background-color: white;
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-  position: relative;
-}
-
-.add_input,
-.list_content {
+.body-content{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.add_input input {
+.overscroll-size > div {
+  flex: 1;
+  height: 300px;
+}
+.main-content {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 700px;
+  padding: 30px 30px 15px;
+  background: white;
+  border: 1px solid;
+  border-color: #dfdcdc #d9d6d6 #ccc;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.add-input,
+.list-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-input input {
   height: 50px;
   width: 70%;
 }
-
-.add_input input::placeholder {
+.add-input input::placeholder {
   text-align: center;
   height: 50px;
   font-weight: bold;
@@ -34,100 +47,78 @@
   font-size: large;
   font-style: italic;
 }
-
-.add_button {
+.add-button {
   border: 0px solid white;
   width: 8%;
   height: 55px;
   margin-left: 10px;
   cursor: pointer;
 }
-
-.icon_add {
+.icon-add {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 40px !important ;
   font-weight: bold;
 }
-
 .contents {
+  overflow: auto;
   margin-top: 20px;
 }
-
-.list_content :hover {
+.list-content :hover {
   background-color: #f0f9ff;
 }
-
-.list_item {
+.list-item {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   border-top: 1px solid gray;
   height: 50px;
-  width: 79%;
+  width: 100%;
 }
-
-.list_item input[type="checkbox"] {
-  zoom: 1.5;
+.list-item {
+  input[type="checkbox"] {
+    zoom: 1.5;
+  }
+  input[type="text"] {
+    zoom: 1.1;
+  }
+  input[type="text"]:hover {
+    background-color: white;
+  }
 }
-
-.list_item input[type="text"] {
-  zoom: 1.1;
-}
-
-.list_item input[type="text"]:hover {
+.list-icon button{
+  border: 0px solid white;
   background-color: white;
 }
-
-.text_input {
-  text-decoration: line-through;
-  color: rgb(73,156,193);
+.list-icon i {
+  color: gray;
 }
-
-.input_text input {
-  margin-left: 3px;
-  margin-right: 7px;
-}
-
-.list_icon {
+.list-icon{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.list_icon button {
-  border: 0px solid white;
-  background-color: white;
-}
-
-.list_icon i {
-  color: gray;
-}
-
-.list_icon .fa-solid:hover {
+.list-icon .fa-solid:hover {
   cursor: pointer;
   color: #2596be;
 }
-
 .contents input {
   background-color: white;
   border: 0px solid white;
 }
-
 .contents input:focus {
   outline: none;
 }
 
-.bottom_setting {
+.actions{
   margin-top: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   bottom: 0;
 }
-
-.remove_button {
+.remove-button{
   border-top: 1px solid gray;
   border: 1px solid gray;
   padding: 8px;
@@ -138,29 +129,25 @@
   cursor: pointer;
   text-transform: uppercase;
 }
-
 .progress {
   height: 100%;
   background-color: #96e34a;
 }
-
-.task_done {
-  height: 30px;
+.task-done {
+  height: 30px; 
   width: 250px;
   border: 1px solid black;
   display: flex;
-  align-items: center;
+  align-items: center; 
   position: relative;
 }
-
-.count_complete {
+.count-complete{
   position: absolute;
   left: 25%;
   font-size: 15px;
   color: gray;
 }
-
-.count_complete p span {
+.count-complete p span{
   font-size: 20px;
   color: gray;
 }
